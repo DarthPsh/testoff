@@ -1,0 +1,115 @@
+.storie {
+    &s {
+        padding: 15px;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit,minmax(320px, 320px));
+    }
+    height: 512px;
+    width: 320px;
+    padding: 40px 20px 20px;
+    background: #4a6296;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'SF Pro Text', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__date {
+        color: $black;
+        background: $accent;
+        padding: 4px 10px;
+        border-radius: 24px;
+        font-size: 14px;
+        margin-bottom: 19px;
+    }
+    &__title {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 120%;
+        margin-bottom: 20px;
+        &--main {
+            font-size: 26px;
+            line-height: 32px;
+        }
+    }
+    &__desc {
+        font-size: 16px;
+        line-height: 122%;
+        margin-bottom: 20px;
+        &--main {
+            font-size: 18px;
+        }
+    }
+    &__download {
+        color: $accent;
+    }
+    &__list {
+        padding-left: 26px;
+        &-item {
+            position: relative;
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                height: 4px;
+                width: 4px;
+                border-radius: 50%;
+                background: $white;
+                top: 11px;
+                left: -13px;
+            }
+        }
+    }
+    &__question {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        &-text {
+            min-height: 61px;
+            height: auto;
+            background: rgba($white, .55);
+            border-radius: 12px;
+            outline: none;
+            border: none;
+            padding: 10px 12px;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: -0.41px;
+        }
+        &-send {
+            color: $black;
+            background: $accent;
+            border: none;
+            width: 100%;
+            padding: 13px 0 14px;
+            box-shadow: 0px 7px 35px rgba(0, 0, 0, 0.25);
+            border-radius: 26px;
+            font-size: 15px;
+            line-height: 120%;
+            margin-top: auto;
+            cursor: pointer;
+        }
+    }
+    &__watch {
+        color: $black;
+        background: $white;
+        border: none;
+        width: 100%;
+        padding: 13px 0 14px;
+        box-shadow: 0px 7px 35px rgba(0, 0, 0, 0.25);
+        border-radius: 26px;
+        font-size: 15px;
+        line-height: 120%;
+        margin-top: auto;
+        cursor: pointer;  
+        text-align: center;
+    }
+}

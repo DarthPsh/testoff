@@ -1,0 +1,36 @@
+extends layout/main
+
+block variables
+	-var title = 'Главная страница'
+
+block content
+	.stories
+		.storie(style="background-image: url('assets/images/common/story_cover.png')")
+			.storie__date 2 февраля
+			h2.storie__title.storie__title--main Delivery Club: как повысить продажи
+			p.storie__desc.storie__desc--main По материалам подкаста «Бизнес-ланч» с Артемом Ишониным — директором Delivery Club
+		.storie(style="background-image: url('assets/images/common/story_1.png')")
+			h2.storie__title Определить участников процесса
+			p.storie__desc Составьте список тех, кто пользуется вашим продуктом.
+			a.storie__download(href="#") Скачать чек-лист списка
+		.storie(style="background-image: url('assets/images/common/story_2.png')")
+			h2.storie__title Нарисовать карты сценариев использования
+			p.storie__desc Представьте, какой путь проходит каждый участник процесса. Визуализируйте это.
+		.storie(style="background-image: url('assets/images/common/story_3.png')")
+			h2.storie__title Найти ошибки в процессах
+			p.storie__desc Пройдите путь каждого пользователя по точкам, чтобы найти слабые места, которые снижают продажи.
+		.storie(style="background-image: url('assets/images/common/story_4.png')")
+			h2.storie__title Пересмотреть процессы
+			ul.storie__list
+				li.storie__list-item Исправьте ошибки.
+				li.storie__list-item Пропишите инструкции.
+				li.storie__list-item Проверьте все еще раз.
+		.storie(style="background-image: url('assets/images/common/story_5.png')")
+			h2.storie__title Задайте вопрос спикеру
+			form.storie__question
+				textarea(placeholder="У мен есть вопрос, могу спросить?").storie__question-text
+				button.storie__question-send Отправить
+		.storie(style="background-image: url('assets/images/common/story_6.png')")
+			h2.storie__title Опыт Delivery Club в подкасте «Бизнес-ланч»
+			.storie__desc В подкасте с Артемом Ишониным из Delivery Club обсудили, как отлаживать процессы в компании.
+			.storie__watch Смотреть на YouTube
